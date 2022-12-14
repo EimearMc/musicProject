@@ -22,8 +22,7 @@ function generatePlaylist() {
   // Make a request to the Spotify API to search for tracks by the artists
   fetch(`https://api.spotify.com/v1/search?q=${artistList.join('+')}&type=track`, {
   headers: {
-    Authorization: `Bearer BQAHVhXPSNxPW9IFRA0rl8acCh-Q2uYjiylvPSkYedoQYYNh_piAQ3OVOix1aQpht3kjVekmCaTKnxOD73s2lUsvEOZeIjqSXciHT79coyAqBJj0AkfoOTprkp7_KhgHUASbe-C5r9PnwzMR3vHG1nD236hh0etAFeAULMWdKj50Tfw2nH_sg2J8mUQOPoFjb8ep2rm5gMa1Vt6yA2jDICs
-    `
+    Authorization: `Bearer BQBZJHLYazp0nhd5UVzqg3kvUWXbBmA3c62MwOjh25u2PxWv-jSG01uWTlRsMHiXzM-rrgNy9KqkOstARZYSIdAiAyhz-OgXgOnf5Se2HRsJQDTMoBr8oodtoaHVfoPCVmwuB3RmxbCmSIrKaLUkAJblAJI5gVk6B1bzznQ5S5qobZnozxtiVmHwn-zVkriF6qGfnkS3PI-RTpo8USvTV2c`
       }
       })
     .then(response => response.json())
