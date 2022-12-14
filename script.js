@@ -2,11 +2,11 @@
 const playlistInput = document.getElementById('playlist-input');
 const generatePlaylistButton = document.getElementById('generate-playlist-button');
 const playlistTracks = document.getElementById('playlist-tracks');
-const audioPlayer = document.getElementById('audio-player');
-const playButton = document.getElementById('play-button');
-const stopButton = document.getElementById('stop-button');
-const skipButton = document.getElementById('skip-button');
-const audioVisualizer = document.getElementById('audio-visualizer');
+//const audioPlayer = document.getElementById('audio-player');
+//const playButton = document.getElementById('play-button');
+//const stopButton = document.getElementById('stop-button');
+//const skipButton = document.getElementById('skip-button');
+///const audioVisualizer = document.getElementById('audio-visualizer');
 
 // Define event listeners for the Generate Playlist button, audio player, and audio controls
 generatePlaylistButton.addEventListener('click', generatePlaylist);
@@ -22,7 +22,7 @@ function generatePlaylist() {
   // Make a request to the Spotify API to search for tracks by the artists
   fetch(`https://api.spotify.com/v1/search?q=${artistList.join('+')}&type=track`, {
   headers: {
-    Authorization: `Bearer BQBZJHLYazp0nhd5UVzqg3kvUWXbBmA3c62MwOjh25u2PxWv-jSG01uWTlRsMHiXzM-rrgNy9KqkOstARZYSIdAiAyhz-OgXgOnf5Se2HRsJQDTMoBr8oodtoaHVfoPCVmwuB3RmxbCmSIrKaLUkAJblAJI5gVk6B1bzznQ5S5qobZnozxtiVmHwn-zVkriF6qGfnkS3PI-RTpo8USvTV2c`
+    Authorization: `Bearer BQB5-B3KRgSIvq8Z7TPcAEkwb0rNtvUh8Aq90tLVVMgbrVOPF6Nh6iC0o26T2VPnE9Deopw16lnYO_ABWtmEfVCb8a7W2qceI9W3FprBpIlC9UwN72fnaON8MHQWH64gG1E6LXIfYqapUUSOUZyZf-2WUzRKP-WPDefMDvkh-VEr5saPZpfwNbG28QxY9kjdS3oXXJjVgMfZ1ifAMbqu24Q`
       }
       })
     .then(response => response.json())
